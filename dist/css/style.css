@@ -1,0 +1,176 @@
+*,
+*:after,
+*::before {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+body {
+	font-family: 'Space Mono', monospace;
+	font-size: 16px;
+	color: #333333;
+	font-weight: 400;
+	letter-spacing: -0.035em;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+h1 {
+	font-size: 4rem;
+	font-weight: 700;
+}
+
+p {
+	color: #4f4f4f;
+	font-size: 24px;
+}
+
+h1,
+p {
+	margin-bottom: 1.2rem;
+}
+
+a {
+	text-transform: uppercase;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+header,
+footer {
+	flex-shrink: 0;
+}
+
+header {
+	padding: 2rem 0;
+}
+
+main {
+	flex: 1 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+header a {
+	font-family: 'Inconsolata', monospace;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: #333;
+	font-weight: bold;
+}
+
+footer p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.8rem;
+	text-align: center;
+	margin-bottom: 0;
+	padding: 3rem;
+	font-weight: bold;
+}
+
+.wrapper {
+	max-width: 73.125rem;
+	margin: 0 auto;
+}
+
+.fx {
+	display: flex;
+}
+
+.fx__image .fx-content {
+	flex-grow: 1;
+}
+
+.fx__image {
+	flex-basis: 40rem;
+	margin-right: 2rem;
+}
+
+.fx__content {
+	flex-basis: auto;
+	margin-left: 2rem;
+}
+
+.fx__content p {
+	width: 23rem;
+}
+
+.button {
+	background-color: #333333;
+	padding: 1.2rem 1.6rem;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	font-weight: 700;
+	display: inline-block;
+}
+
+a.button {
+	margin-top: 1.2rem;
+}
+
+@media screen and (max-width: 64rem) {
+	.wrapper {
+		margin: 0;
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+
+	main {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
+
+	main > .fx {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.button {
+		display: block;
+	}
+
+	.fx__image,
+	.fx__content {
+		margin: 0;
+	}
+
+	.fx__image {
+		flex-basis: auto;
+	}
+
+	.fx__content {
+		text-align: center;
+	}
+
+	.fx__content h1,
+	.fx__content p {
+		margin-bottom: 3rem;
+	}
+
+	.fx__content p {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 31.25rem) {
+  .fx_content h1 {
+    font-size: 3rem;
+  }
+
+  .fx_content  p {
+    font-size: 1.125rem;
+  }
+
+	.fx__image {
+		margin-bottom: 5rem;
+	}
+}
